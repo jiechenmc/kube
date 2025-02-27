@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
+COPY *.ts ./
+COPY *.json ./
 
 RUN yarn
 

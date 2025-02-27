@@ -4,6 +4,7 @@ services:
       context: .
     volumes:
       - ./app:/app/app
+      - ./components:/app/components
     env_file:
       - .env
 
