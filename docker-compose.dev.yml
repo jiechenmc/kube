@@ -1,10 +1,11 @@
 services:
   client:
     build:
-      context: .
+      context: ./client
     volumes:
-      - ./app:/app/app
-      - ./components:/app/components
+      - ./client/app:/app/app
+      - ./client/components:/app/components
+      - ./client/lib:/app/lib
     env_file:
       - .env
 
